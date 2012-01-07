@@ -46,6 +46,6 @@ There are a few key options of PopUpWindow.  Four of them relate to the physics 
 Screenshots
 -----------
 
-![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow1.gif)
-![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow2.gif)
-![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow3.gif)
+![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow1.jpg)
+![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow2.jpg)
+![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow3.jpg)

@@ -48,9 +48,9 @@ There are a few options of PopUpWindow to customize its behavior:
 Screenshots
 -----------
 
-![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow1.gif)
-![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow2.gif)
-![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow3.gif)
+![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow1.jpg)
+![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow2.jpg)
+![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow3.jpg)
 
 Dependancies
 ------------
