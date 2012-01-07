@@ -9,7 +9,7 @@ Supports dragging, closing, resizing, CSS styling, and loading content from AJAX
 How to Use
 ----------
 
-PopUpWindow at it's heart requires only a title and a content for the body to use.  The content can be supplied as a string of HTML,
+PopUpWindow at its heart requires only a title and a content for the body to use.  The content can be supplied as a string of HTML,
 a DOM element, or the response from an AJAX call.  The simplest example is to pull the content as a DOM element (presumably on domready, so that it doesn't show in the normal page flow):
 
 	#HTML

@@ -70,8 +70,8 @@ function DisplayDemoPage() {
 	window.addEvent('domready', function() {
 		App.popUp1 = new PopUpWindow('Static Content', { contentDiv: 'staticDiv', width: 200 });
 		App.popUp2 = new PopUpWindow('AJAX Loding');
-		App.popUp3 = new PopUpWindow('CSS Styling', { contentDiv: 'zenDiv', className: 'zenPopUpWindow', onClose: function() { console.log('closed!'); } });
-		App.popUp4 = new PopUpWindow('Resizable', { contentDiv: 'resizeDiv', isResizable: true, onResize: function(d, e) { console.log(d); } });
+		App.popUp3 = new PopUpWindow('CSS Styling', { contentDiv: 'zenDiv', className: 'zenPopUpWindow' });
+		App.popUp4 = new PopUpWindow('Resizable', { contentDiv: 'resizeDiv', isResizable: true });
 	});
 </script>
 </body>
