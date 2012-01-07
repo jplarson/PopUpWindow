@@ -8,40 +8,41 @@ Supports dragging, closing, resizing, CSS styling, and loading content from AJAX
 How to Use
 ----------
 
-PopUpWindow takes some careful setup of HTML elements and CSS, but no more than you would expect for the intended usage.  Consider the following HTML:
+PopUpWindow at its heart requires only a title and a content for the body to use.  The content can be supplied as a string of HTML,
+a DOM element, or the response from an AJAX call.  The simplest example is to pull the content as a DOM element (presumably on domready, so that it doesn't show in the normal page flow):
 
-  <div id="viewPort">
-    <div class="panel"></div>
-    <div class="panel"></div>
-    <div class="panel"></div>
-  </div>
+	#HTML
+	<div id="popUpContent">
+	  <p>This is simple, static content for my pop up window.</p>
+	</div>
 
-In our CSS we would (presumably) want to set the div.panel elements to have the same size as the #viewPort, and also we will most likely want #viewPort to have overflow: hidden.  Also, if panels are to be lined up horizontally, we must be sure that they are (this is done most easily by a float: left).  So we have, for example:
-
-#viewPort {
-	height:		400px;
-	width:		300px;
-	overflow:		hidden;
-}
-
-div.panel {
-	height:		400px;
-	width:		300px;
-	float:		left;
-}
-
-Our JavaScript to invoke drag fling action is now a simple matter:
+Our JavaScript to create a pop up window is this:
 
 	#JS
-	new PopUpWindow(viewPort, { flingAxis: 'x'});
+	var myPopUp = new PopUpWindow('My PopUp Window', { contentDiv: 'popUpContent' });
+
+To open it:
+
+	#JS
+	myPopUp.open();
+	
+PopUpWindow offers a few convenience methods for positioning the window:
+
+- setPosition(options) is a wrapper for calling Element.position on the pop up window div.
+- positionTo(relativeTo, xOffset, yOffset), a lazy man's shortcut to a useful set of Element.position() options.  Useful when a pop up should appear in proximity to the button or link which triggered its opening.
+
 
 PopUpWindow Options
 ------------------
 
-There are a few key options of PopUpWindow.  Four of them relate to the physics of sliding, and all have the units pixels per frame: .
- * maxVelocity, slideVelocity, minFlingVelocity, and slideFriction relate to the physics of sliding, and all have the units pixels per frame.
- * flingAxis determines the axis of movement for the panels.  It defaults to 'x', and 'y' may be supplied for vertical movement.
- * onFlingDone is an event handler for when a fling is completed (i.e. when the fling ends due to reaching the threshhold of the next panel).
+There are a few options of PopUpWindow to customize its behavior:
+
+- width, top, left and zIndex control corresponding CSS properties of the window div.
+- isDraggable, isClosable and isResizable control the behaviors available to the window.
+- resizeLimits describes the min and max sizes along the x and y axis (applicable only for resizable windows).
+- contentDiv, when supplied, is used to load content from a DOM element (and remove it from its original position in the document body).
+- URL, when supplied, is used to load content via AJAX.
+- onOpen, onClose, and onResize are event handlers.
 
 Screenshots
 -----------
