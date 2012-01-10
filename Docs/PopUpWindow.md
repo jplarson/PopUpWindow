@@ -44,6 +44,58 @@ There are a few options of PopUpWindow to customize its behavior:
 - URL, when supplied, is used to load content via AJAX.
 - onOpen, onClose, and onResize are event handlers.
 
+CSS
+---
+
+Naturally, CSS styling is critical to both functionality and aesthetics.  Here's an example styling that gives the essential structure:
+
+	#CSS
+	.popUpWindow {
+		border:					2px solid #000000;
+		border-radius:			10px;
+		background:				#fff;
+		box-shadow:				4px 4px 3px #888;
+	}
+	.popUpWindow .titleBar {
+		position:				relative;
+		padding:				3px 10px;
+		height:					20px;
+		font-size:				20px;
+		background:				#000;
+		color:					#fff;
+		border-radius:			8px 8px 0 0;
+	}
+		.popUpWindow .titleBar span.theTitle {
+			font-weight:			900;
+		}
+	
+		.popUpWindow .titleBar span.closeIcon {
+			position:				absolute;
+			top:					5px;
+			right:					7px;
+			background:				url(../images/iconWhiteBigX.png) no-repeat;
+			height:					23px;
+			width:					23px;
+			cursor:					pointer;
+		}
+	
+	.popUpWindow div.content {
+		padding:				5px 10px;
+		position:				relative;
+		margin:					0;
+		padding:				8px;
+		overflow:				auto;
+	}
+		.popUpWindow div.content span.resizeIcon {
+			position:				absolute;
+			right:					1px;
+			bottom:					1px;
+			height:					16px;
+			width:					16px;
+			background:				transparent url(../images/iconResize.png) no-repeat;
+			cursor:					se-resize;
+		}
+
 Screenshots
 -----------
 
