@@ -52,7 +52,7 @@ Screenshots
 ![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow2.jpg)
 ![Screenshot](http://www.jpl-consulting.com/projects/MooTools/PopUpWindow/ScreenShots/PopUpWindow3.jpg)
 
-Dependancies
+Dependencies
 ------------
 	core:1.4.2/Events
 	core:1.4.2/Options

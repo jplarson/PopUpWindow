@@ -1,6 +1,7 @@
 <?
-
-	switch($_REQUEST['a']) {
+	$a = isset($_REQUEST['a']) ? $_REQUEST['a'] : '';
+	
+	switch($a) {
 		case 'time':	DisplayTime();		break;
 		default:		DisplayDemoPage();
 	}
